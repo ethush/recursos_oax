@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-96.561699,17.265549]},"properties":{"cvgeo":20363,"Municipio":"Santa Catarina Ixtepeji","region":"Sierra Norte","distrito":"Ixtlán de Juárez","lat_dec":17.265549,"lon_dec":-96.561699,"Manzana":"Manzana"}}
+]}

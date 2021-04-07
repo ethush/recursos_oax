@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-97.284741,17.453482]},"properties":{"cvgeo":20215,"Municipio":"San Juan Sayultepec","region":"Mixteca","distrito":"Nochixtlán","lat_dec":17.453482,"lon_dec":-97.284741,"Nochebuena":"Nochebuena"}}
+]}

@@ -1,0 +1,4 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-95.02208552842067,16.627402880300608]},"properties":{"id":1,"area":0,"perimetro":0,"cnal_ptg":6498,"fc":12380,"entidad":"ZONA GEOTÉRMICA","cve_entida":20,"cve_geo":20014,"municipio":"Ciudad Ixtepec","shape_leng":77352.6961581,"shape_area":295048896.403,"region":"Istmo","distrito":"Juchitán","indice_mar":-1.07,"grado_marg":"Bajo"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-97.1797206698311,16.02402254487591]},"properties":{"id":2,"area":0,"perimetro":0,"cnal_ptg":6367,"fc":12380,"entidad":"ZONA GEOTÉRMICA","cve_entida":20,"cve_geo":20526,"municipio":"Santos Reyes Nopala","shape_leng":92708.8107073,"shape_area":227401209.307,"region":"Costa","distrito":"Juquila","indice_mar":0.76,"grado_marg":"Alto"}}
+]}

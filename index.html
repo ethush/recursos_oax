@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Compendio de mapas de recursos naturales y producción primaria en el estado de Oaxaca">
+    <meta http-equiv="Cache-control" content="public, max-age=86400">
+    <meta name="theme-color" content="#317EFB"/>
+
+    <title>Atlas de Recursos de Oaxaca</title>
+    
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/L.Control.MousePosition.css">
+    <link rel="stylesheet" href="css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="css/nprogress.css">
+    <link rel="stylesheet" href="css/iziToast.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="page-wrapper chiller-theme toggled">
+        <a id="show-sidebar" class="btn btn-sm btn-dark" aria-label="Maximiza/Minimiza menu" href="javascript: void(0);">
+            <!--<i class="fas fa-bars"></i>-->
+            <i class="fas fa-forward"></i>
+        </a>
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <div class="sidebar-brand ">
+                    <div class="row">
+                        <div class="col-10">
+                            <img class="img img-responsive img-fluid img-thumbnail" src="images/logo-3.svg" alt="logo">
+                        </div>
+                        <div class="col-2">
+                            <div id="close-sidebar">
+                                <i class="fas fa-backward"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sidebar-search  -->
+                <div class="sidebar-menu">
+                    <ul id="selector-capas">
+
+                        <li class="header-menu">
+                            <span class="main">Enfoque</span>
+                        </li>
+                        <li>
+                            <div style="margin-left:20px;">
+                                <label for="municipios">Municipios</label>
+                                <select id="municipios" class="selectpicker" data-live-search="true" data-size="8" ></select>
+                            </div>
+                        </li>
+
+                        <li class="header-menu">
+                            <span>Capas activas</span>
+                        </li>
+                        <!--<li class="sidebar-dropdown active">-->
+                        <li class="sidebar-dropdown">
+                            <a href="javascript: void(0);">
+                                <!--<i class="fas fa-chart-line"></i>-->
+                                <i><img class="img img-responsive" src="images/iconos/marco.svg" alt="Marco Geoestadístico"></i>
+                                <span class="main">Marco Geoestadístico</span>
+                            </a>
+                            <!--<div class="sidebar-submenu" style="display:block;">-->
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li class="item"><a href="javascript: void(0);" data-index="0">Marco geoestadístico estatal.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="1">Marco geoestadístico regional.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="2">Marco geoestadístico municipal.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="52">Ciudades medianas.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="53">Ciudades pequeñas.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="54">Localidades suburbanas.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="55">Localidades rurales.</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="javascript: void(0);">
+                                <!--<i class="fas fa-globe-americas"></i>-->
+                                <i><img class="img img-responsive" src="images/iconos/decisiones.svg" alt="Toma de decisiones"></i>
+                                <span class="main">Toma de decisiones</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li class="item"><a href="javascript: void(0);" data-index="57">Régimen de gobierno.</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="javascript: void(0);">
+                                <!--<i class="fas fa-globe-americas"></i>-->
+                                <i><img class="img img-responsive" src="images/iconos/topo.svg" alt="Topografía"></i>
+                                <span class="main">Topografía</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li class="item"><a href="javascript: void(0);" data-index="3">Relieve como atractivo natural</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="4">Hipsometría</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="javascript: void(0);">
+                                <!--<i class="fas fa-globe-americas"></i>-->
+                                <i><img class="img img-responsive" src="images/iconos/hidro.svg" alt="Hidrología"></i>
+                                <span class="main">Hidrología</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li class="item"><a href="javascript: void(0);" data-index="5">Escurrimiento natural medio superficial.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="6">Hidrografía.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="7">Cuencas Hidrológicas (CNA).</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="8">Regiones hidrológicas administrativas.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="9">Subcuencas hidrológicas.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="10">Subregiones Hidrológicas.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="11">Estaciones hidrométricas.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="12">Sitios de monitoreo de calidad del agua superficial, 2013.</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="javascript: void(0);">
+                                <!--<i class="fas fa-globe-americas"></i>-->
+                                <i><img class="img img-responsive" src="images/iconos/endemologia.svg" alt="Edafología"></i>
+                                <span class="main">Edafología</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li class="item"><a href="javascript: void(0);" data-index="13">Edafología.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="14">Suelos dominantes.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="15">Degradación del suelo.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="16">Régimenes de humedad del suelo.</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="javascript: void(0);">
+                                <i><img class="img img-responsive" src="images/iconos/clima.svg" alt="Climatología"></i>
+                                <span class="main">Climatología</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li class="item"><a href="javascript: void(0);" data-index="17">Climas.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="18">Estaciones climatológicas.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="19">Rangos de humedad.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="20">Moda de precipitación anual.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="21">Precipitación media anual.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="22">Precipitación total anual.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="23">Regímenes pluviométricos y Distribución de la precipitación.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="24">Temperatura mínima absoluta.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="25">Temperatura maxima absoluta.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="26">Temperatura mínima promedio.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="27">Temperatura maxima promedio.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="28">Temperatura media anual.</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="javascript: void(0);">
+                                <!--<i class="fas fa-apple-alt"></i>-->
+                                <i><img class="img img-responsive" src="images/iconos/suelo.svg" alt="Vegetación y uso de suelo"></i>
+                                <span class="main">Vegetación y uso de suelo</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li class="item"><a href="javascript: void(0);" data-index="29">Vegetación potencial.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="30">Tenencia de la tierra</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="56">Zonas protegidas.</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="javascript: void(0);">
+                                <!--<i class="fas fa-apple-alt"></i>-->
+                                <i><img class="img img-responsive" src="images/iconos/biodiversidad.svg" alt="Biodiversidad"></i>
+                                <span class="main">Biodiversidad</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li class="item"><a href="javascript: void(0);" data-index="31">Calabazas cultivadas y silvestres de México.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="32">Frijoles domesticados y otras especies silvestres.</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="javascript: void(0);">
+                                <!--<i class="fas fa-apple-alt"></i>-->
+                                <i><img class="img img-responsive" src="images/iconos/riesgo.svg" alt="Riesgo"></i>
+                                <span class="main">Riesgo</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li class="item"><a href="javascript: void(0);" data-index="33">Ubicación de laderas suceptibles de deslizamiento.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="51">Zonas geotérmicas.</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="javascript: void(0);">
+                                <!--<i class="fas fa-apple-alt"></i>-->
+                                <i><img class="img img-responsive" src="images/iconos/produccion.svg" alt="Producción"></i>
+                                <span class="main">Producción</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li class="item"><a href="javascript: void(0);" data-index="34">Aves de corral.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="35">Bovinos.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="36">Caprinos.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="37">Colmenas.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="38">Ovinos.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="39">Porcinos.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="40">Agostaderos sin aprovechar.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="41">Chile.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="42">Crisantemo.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="43">Fresa.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="44">Jitomate.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="45">Manzana.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="46">Nochebuena.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="47">Pepinos.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="48">Rosa.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="49">Otras especies de cultivo.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="50">Minas.</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="javascript: void(0);">
+                                <!--<i class="fas fa-apple-alt"></i>-->
+                                <i><img class="img img-responsive" src="images/iconos/turismo.svg" alt="Rutas turísticas"></i>
+                                <span class="main">Rutas turísticas</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li class="item"><a href="javascript: void(0);" data-index="58">Rutas turísticas.</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="javascript: void(0);">
+                                <i class="fas fa-apple-alt"></i>
+                                <!--<i><img class="img img-responsive" src="images/iconos/turismo.svg"></i>-->
+                                <span class="main">Demografía poblacional</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li class="item"><a href="javascript: void(0);" data-index="59">Autoadscripción indígena.</a></li>
+                                    <li class="item"><a href="javascript: void(0);" data-index="60">Autoadscripción Afrodescendientes.</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header-menu">
+                            <span class="main_title">Extra</span>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);">
+                                <i class="fas fa-book"></i>
+                                <span class="main">Documentación</span>
+                                <span class="badge badge-pill badge-primary">35</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);">
+                                <i class="fas fa-download"></i>
+                                <span class="main">Descargas</span>
+                                <span class="badge badge-pill badge-primary">100</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);">
+                                <i class="fa fa-folder"></i>
+                                <span class="main">Metadatos</span>
+                                <span class="badge badge-pill badge-primary">100</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+        </nav>
+        <!-- sidebar-wrapper  -->
+        <!-- page-content -->
+        <main class="page-content">
+            <div class="container-fluid" style="padding-top:0;">
+                <div class="row mt-3" id="map_container">
+                    <div id="map" style="width:100%; height:85vh;"></div>
+                </div>
+            </div>
+        </main>
+        <!-- page-content -->
+    </div>
+    <!-- page-wrapper -->
+    <script src="js/nprogress.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/iziToast.min.js"></script>
+    <script src="js/perfect-scrollbar.min.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/L.Control.MousePosition.js"></script>
+    <script src="js/effects.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>

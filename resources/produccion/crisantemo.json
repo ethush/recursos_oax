@@ -1,0 +1,5 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-96.596524,16.328478]},"properties":{"cvgeo":20059,"Municipio":"Miahuatlán de Porfirio Díaz","region":"Sierra Sur","distrito":"Miahuatlán","lat_dec":16.328478,"lon_dec":-96.596524,"Crisantemo":"Crisantemo"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-96.50758,16.215636]},"properties":{"cvgeo":20095,"Municipio":"San Andrés Paxtlán","region":"Sierra Sur","distrito":"Miahuatlán","lat_dec":16.215636,"lon_dec":-96.50758,"Crisantemo":"Crisantemo"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-95.88113,16.284183]},"properties":{"cvgeo":20410,"Municipio":"Santa María Ecatepec","region":"Sierra Sur","distrito":"Yautepec","lat_dec":16.284183,"lon_dec":-95.88113,"Crisantemo":"Crisantemo"}}
+]}

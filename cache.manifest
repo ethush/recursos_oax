@@ -1,0 +1,26 @@
+CACHE MANIFEST
+
+CACHE:
+images/favicon.png
+css/bootstrap.min.css
+css/bootstrap-select.min.css
+css/leaflet.css
+css/L.Control.MousePosition.css
+css/perfect-scrollbar.css
+css/nprogress.css
+css/iziToast.min.css
+css/menu.css
+css/style.css
+js/nprogress.js
+js/jquery.min.js
+js/popper.min.js
+js/bootstrap.min.js
+js/bootstrap-select.min.js
+js/iziToast.min.js
+js/perfect-scrollbar.min.js
+js/leaflet.js
+js/L.Control.MousePosition.js
+js/effects.js
+images/*
+NETWORK:
+*

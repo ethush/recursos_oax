@@ -1,0 +1,8 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-96.731901,16.564276]},"properties":{"cvgeo":20028,"Municipio":"Heroica Ciudad de Ejutla de Crespo","region":"Valles Centrales","distrito":"Ejutla","lat_dec":16.564276,"lon_dec":-96.731901,"Pepino":"Pepino"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-97.551539,17.236252]},"properties":{"cvgeo":20050,"Municipio":"Magdalena Peñasco","region":"Mixteca","distrito":"Tlaxiaco","lat_dec":17.236252,"lon_dec":-97.551539,"Pepino":"Pepino"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-96.685529,16.685128]},"properties":{"cvgeo":20072,"Municipio":"San José del Progreso","region":"Valles Centrales","distrito":"Ocotlán","lat_dec":16.685128,"lon_dec":-96.685529,"Pepino":"Pepino"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-96.959567,17.801548]},"properties":{"cvgeo":20177,"Municipio":"San Juan Bautista Cuicatlán","region":"Cañada","distrito":"Cuicatlán","lat_dec":17.801548,"lon_dec":-96.959567,"Pepino":"Pepino"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-96.781005,16.826736]},"properties":{"cvgeo":20295,"Municipio":"San Pablo Huixtepec","region":"Valles Centrales","distrito":"Zimatlán","lat_dec":16.826736,"lon_dec":-96.781005,"Pepino":"Pepino"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-97.135813,17.498849]},"properties":{"cvgeo":20304,"Municipio":"San Pedro Coxcaltepec Cántaros","region":"Mixteca","distrito":"Nochixtlán","lat_dec":17.498849,"lon_dec":-97.135813,"Pepino":"Pepino"}}
+]}

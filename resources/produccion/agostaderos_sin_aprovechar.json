@@ -1,0 +1,8 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-95.042149,16.877889]},"properties":{"clave":20057,"municipio":"Matías Romero Avendaño","region":"Istmo","distrito":"Juchitán","agostadero":"agostaderos sin aprovechamiento","lat_dec":16.877889,"lon_dec":-95.042149}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-95.98045,16.608181]},"properties":{"clave":20064,"municipio":"Nejapa de Madero","region":"Sierra Sur","distrito":"Yautepec","agostadero":"agostaderos sin aprovechamiento","lat_dec":16.608181,"lon_dec":-95.98045}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-96.106704,16.500607]},"properties":{"clave":20125,"municipio":"San Carlos Yautepec","region":"Sierra Sur","distrito":"Yautepec","agostadero":"agostaderos sin aprovechamiento","lat_dec":16.500607,"lon_dec":-96.106704}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-95.095094,16.962829]},"properties":{"clave":20198,"municipio":"San Juan Guichicovi","region":"Istmo","distrito":"Juchitán","agostadero":"agostaderos sin aprovechamiento","lat_dec":16.962829,"lon_dec":-95.095094}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-94.76863,16.588492]},"properties":{"clave":20505,"municipio":"Santo Domingo Ingenio","region":"Istmo","distrito":"Juchitán","agostadero":"agostaderos sin aprovechamiento","lat_dec":16.588492,"lon_dec":-94.76863}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-94.353903,16.482804]},"properties":{"clave":20525,"municipio":"Santo Domingo Zanatepec","region":"Istmo","distrito":"Juchitán","agostadero":"agostaderos sin aprovechamiento","lat_dec":16.482804,"lon_dec":-94.353903}}
+]}

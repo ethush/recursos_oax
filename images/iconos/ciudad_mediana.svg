@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="33px" height="33px" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+<g>
+	<g>
+		<g>
+			<path fill="#00BFA5" d="M33,27.66c0,2.949-2.391,5.34-5.34,5.34H5.34C2.391,33,0,30.609,0,27.66V5.34C0,2.391,2.391,0,5.34,0
+				h22.32C30.609,0,33,2.391,33,5.34V27.66z M32,5.34C32,2.943,30.057,1,27.661,1H5.339C2.943,1,1,2.943,1,5.34v22.32
+				C1,30.057,2.943,32,5.339,32h22.321C30.057,32,32,30.057,32,27.66V5.34z"/>
+		</g>
+	</g>
+	<g>
+		<rect x="3" y="21" fill="#00BFA5" width="13" height="11"/>
+		<polygon fill="#00BFA5" points="9.797,22 0.898,22 5.347,18.523 9.797,15.004 14.246,18.502 18.696,22 		"/>
+		<rect x="8" y="27" fill="#FFFFFF" width="4" height="5"/>
+	</g>
+	<g>
+		<rect x="16" y="21" fill="#6E985B" width="13" height="11"/>
+		<polygon fill="#6E985B" points="22.797,22 13.898,22 18.347,18.523 22.797,15.004 27.246,18.502 31.696,22 		"/>
+		<rect x="21" y="27" fill="#FFFFFF" width="4" height="5"/>
+	</g>
+</g>
+</svg>
